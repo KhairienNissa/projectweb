@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="public/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <div class="container-fluid">
+              <img class="navbar-brand" src="public/image/brandred.png" width="40px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li style="margin-left: 20px;" class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                  </li>
+                   {{#if isLogin}}
+                    <li style="margin-left: 20px;" class="nav-item">
+                    <a class="nav-link" href="/add-project">Add Project</a>
+                  </li>
+                </ul>
+                   {{else}}
+                  <li style="margin-left: 20px;" class="nav-item">
+                    <a class="nav-link" href=""></a>
+                  </li>
+                </ul>
+                {{/if}}
+                <div class="d-flex">
+                  {{#if isLogin}}
+                   <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li style="margin-left: 20px;" class="nav-item">
+                    <a class="nav-link " aria-current="page" href="/home">Hi {{user.name}}</a>
+                  </li>
+                  <li style="margin-left: 20px; margin-right: 20px;" class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                  </li>
+                  {{else}}
+                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li style="margin-left: 20px;" class="nav-item">
+                    <a class="nav-link " aria-current="page" href="/register">Register</a>
+                  </li>
+                  <li style="margin-left: 20px; margin-right: 20px;" class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                  </li>
+                  {{/if}}
+                  <a href="/my-contact"style="font-size: 13px; border-radius: 10px; " class="btn btn-dark px-3 pt-2" type="submit">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+   
+
+<div class="myprofil">
+
+   {{#if messages.success}}
+      <div class="alert alert-success" role="alert">
+        {{messages.success}} </div>
+        {{/if}}
+          <div class="container">
+            
+      
+         <div class="row" style="padding-top: 40px; padding-bottom: 40px;">
+           <div class="col-md-6" style="padding-left: 120px;">
+            <div class="left-family">
+              <h2 style ="margin-bottom: 15px;">HI Welcome To My Hut</h2>
+              <p style="text-align: left;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, fuga! Itaque eaque explicabo ab id corrupti. Molestias, odit repellendus sapiente aperiam porro obcaecati, vero voluptatibus consectetur dolorem officiis, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum, provident fugiat a ullam sint numquam unde harum porro neque ipsum iure nesciunt soluta quia dolorem saepe blanditiis quibusdam temporibus? Lorem ipsum dolor sit </p>
+              
+          <div class="button">
+            <button>
+                <a href="mailto:cacakhairien@gmail.com">contact</a>
+            </button>
+            <p style="font-weight: bold;">download CV <a href="https://drive.google.com/file/d/1R3bxgDqP41VHXpqkG8KnDUnQ_iODxZqJ/view?usp=sharing"><img src="gambar/Download.png" width="15px"></a></p>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/neiriahk/"><img src="public/image/instagram.png"width="60px"></a>
+            <a href="https://www.facebook.com/shasa.bobs.9"><img src="public/image/facebook.png" width="60px"></a>
+            <a href="https://twitter.com/ayamgorengh"><img src="public/image/twitter.png" width="60px"></a>
+            <a href="wa.me/089651049130"><img src="public/image/whatsapp.png" width="60px"></a>
+          </div>
+        </div>
+           </div>
+
+           <div class="col-md-1">
+        
+           </div>
+
+           <div class="col-md-3" style="padding-left: 50px;">
+            <div class="card">
+              <img src="public/image/caca.jpg" width="260px" height="330" alt="CACA">
+              <center>
+              <h3 style="margin-top:10px;">Khairien Nissa</h3>
+              <p>Fulstack Developer</p></center>
+          </div>
+           </div>
+         </div>
+        </div>
+          </div>
+
+
+<div class="project">
+
+    <center><h1 style="padding-top: 40px;">My Project</h1>
+    </center>
+      <div class="box">
+        <div class="box-flex" id="box-flex">
+          {{#each blogs}}
+          <div  class="box-flex-1">
+            <div>
+        <img class="in-image" src="uploads/{{this.image}}"/>
+            <div class="content">
+            <a class="judul" href="/detail-project/{{this.id}}"><p>{{this.name}}</p></a> <br>
+              <p style="font-size: 12px; padding-bottom: 10px;"> Durasi- {{this.duration}} || {{this.author}}</p> <br>
+              <p>
+                {{this.deskripsi}}
+              </p>
+              <div style="margin-top: 5px; margin-left: 5px;">
+               {{#each teknologi}} <i class="fa-brands fa-{{this}}" style="font-size: 24px"></i> {{/each}}
+              </div> 
+              {{#if isLogin}}
+               <button class="button1"><a href="/edit-project/{{this.id}}">edit</a></button>
+              <button class="button2" ><a href="/delete-project/{{this.id}}">delete</a></button>
+              {{else}}
+
+              {{/if}}
+            </div>
+          </div>
+          </div>
+          {{/each}}
+
+        
+
+          </div> 
+        </div> 
+     </div>  
+      </div>
+
+    </body>
+</html>
+

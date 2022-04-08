@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+    background-color: #eaeaea;
+    font-family: 'segoe ui';
+    font-size: small;
+}
+
+label {
+    font-weight: bold;
+}
+
+h1{
+margin: 20px auto;
+}
+
+}

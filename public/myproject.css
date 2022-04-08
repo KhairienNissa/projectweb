@@ -1,0 +1,125 @@
+
+.body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family:'Segoe UI';
+    font-size: small;
+    text-align: justify;
+    padding-bottom: 100px;
+}
+.projectName {
+    background-color:rgb(255, 255, 255); 
+    width: 100%; 
+    height: 40px;
+    margin-bottom:10px;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 2px 1px rgb(0, 0, 0);  */
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.date {
+    display: flex;
+}
+
+.label {
+    font-size: 18px; 
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.start input {
+    background-color: rgb(255, 255, 255); 
+    width:220px; 
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom:10px;
+    border-radius: 5px;
+    margin-right: 4px;
+    /* box-shadow: 1px 1px 2px 1px rgb(0, 0, 0); ; */
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.end input {
+    background-color: rgb(255, 255, 255); 
+    width: 220px; 
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom:10px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    /* box-shadow: 1px 1px 2px 1px rgb(0, 0, 0);    */
+}
+
+.textArea {
+    background-color: rgb(255, 255, 255); 
+    width: 100%; 
+    height: 100px;
+    padding-top: 15px;
+    /* box-shadow: 1px 1px 2px 1px rgb(0, 0, 0);  */
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+.buttonForm {
+    background-color: black;
+    font-size: 17px;
+    margin-top: 20px;
+    border: none;
+    margin-left: 360px;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 50px;
+    box-shadow: 1px 0px 0px rgb(26, 25, 25);
+}
+
+.image {
+    width: 470px ;
+    height: 33px;
+    background-color: rgb(255, 252, 252);
+    margin-bottom:20px;
+    border-radius: 5px;
+    /* box-shadow: 2px 1px 2px 1px rgb(128, 128, 128); */
+    border: 2px solid rgb(168, 166, 166);
+    cursor: pointer;
+    display: flex;
+    
+}
+.image img {
+width: 20px;
+height: 20px;
+padding-left: 37px;
+}
+
+.button-image {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    background-color: rgb(47, 47, 47);
+    border: 2px solid  rgb(47, 47, 47);
+    color: white;
+    border: white;
+    font-size: 17px;
+    
+}
+.checkbox {
+    display: flex;
+}
+
+.kanan {
+    padding-left: 100px;
+}
+
+.lab-checkbox {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+}
+
+.form-section {
+    margin-top: 70px;
+}
